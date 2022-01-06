@@ -50,7 +50,7 @@ public class DrinkService implements ServiceMethods<Drink>{
 			Drink existing = existingDrink.get();
 			existing.setName(drink.getName());
 			existing.setType(drink.getType());
-			existing.setAlcholicPrecentage(drink.getAlcholicPrecentage());
+			existing.setAlcoholicPercentage(drink.getAlcoholicPercentage());
 			existing.setCalories(drink.getCalories());
 			existing.setCarbohydrates(drink.getCarbohydrates());
 			
