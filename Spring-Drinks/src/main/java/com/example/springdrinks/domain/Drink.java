@@ -111,10 +111,18 @@ public class Drink {
 	public void setCarbohydrates(long carbohydrates) {
 		this.carbohydrates = carbohydrates;
 	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Drink [id=" + id + ", name=" + name + ", type=" + type + ", alcoholicPercentage=" + alcoholicPercentage
+				+ ", calories=" + calories + ", carbohydrates=" + carbohydrates + "]";
+	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(alcoholicPercentage, calories, carbohydrates, id, name, type);
+		return Objects.hash(alcoholicPercentage, calories, carbohydrates, name, type);
 	}
 
 	@Override
@@ -127,9 +135,10 @@ public class Drink {
 			return false;
 		Drink other = (Drink) obj;
 		return alcoholicPercentage == other.alcoholicPercentage && calories == other.calories
-				&& carbohydrates == other.carbohydrates && id == other.id && Objects.equals(name, other.name)
+				&& carbohydrates == other.carbohydrates && Objects.equals(name, other.name)
 				&& Objects.equals(type, other.type);
 	}
+
 	
 	
 

@@ -1,0 +1,1 @@
+INSERT INTO drink(name, type, alcoholic_percentage, carbohydrates, calories) Values ('San Miguel', 'Lager', 5, 4, 45000);
